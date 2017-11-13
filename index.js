@@ -5,16 +5,13 @@ const express = require('express');
 // ROUTES
       todoRoutes = require('./routes/todos');
 
-
 // APP CONFIG
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use('/api/todos', todoRoutes);
 
-app.get('/', (req, res) => {
-  res.send('hello from root route');
-});
 
+// SERVER
 app.get('*', (req, res) => {
   res.send('PAGE NOT FOUND');
 });
