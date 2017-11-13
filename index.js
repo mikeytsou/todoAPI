@@ -1,9 +1,14 @@
 const express = require('express');
+      bodyParser = require('body-parser');
       app = express();
 
 // ROUTES
       todoRoutes = require('./routes/todos');
 
+
+// APP CONFIG
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 app.use('/api/todos', todoRoutes);
 
 app.get('/', (req, res) => {
