@@ -2,6 +2,7 @@ const express = require('express');
       router = express.Router();
       db = require('../models');
 
+// LIST
 router.get('/', (req, res) => {
   db.Todo.find()
   .then(function(todos) {
@@ -12,10 +13,22 @@ router.get('/', (req, res) => {
   });
 });
 
+// CREATE
 router.post('/', (req, res) => {
   db.Todo.create(req.body)
   .then(function(newTodo) {
     res.json(newTodo);
+  })
+  .catch(function(err) {
+    res.send(err);
+  });
+});
+
+// SHOW
+router.get('/:todoId', (req, res) => {
+  db.Todo.findById(req.params.todoId)
+  .then(function(foundTodo) {
+    res.json(foundTodo);
   })
   .catch(function(err) {
     res.send(err);
