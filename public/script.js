@@ -11,6 +11,10 @@ const getTodos = function() {
     todos.forEach(function(todo) {
       let newTodo = $(`<li class="task">${todo.description}</li>`);
 
+      if(todo.completed) {
+        newTodo.addClass('done')
+      }
+
       $('.list').append(newTodo);
     });
   }
