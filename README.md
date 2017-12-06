@@ -6,7 +6,7 @@ The API is built with Express and MongoDB and the single-page application is bui
 
 ![](/public/images/github_todoAPI_SPA.png)
 
-Access the API data in JSON format by entering the url: https://afternoon-dawn-27478.herokuapp.com/api/todos
+View the raw API data in JSON format by entering the url: https://afternoon-dawn-27478.herokuapp.com/api/todos
 
 ![](/public/images/github_todoAPI_JSON.png)
 
