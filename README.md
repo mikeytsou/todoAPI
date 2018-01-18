@@ -1,8 +1,8 @@
-# todoAPI
+# Todo REST API
 
-A simple single-page application built with a customizable Todo List REST API.
+A customizable REST API built for anyone who wants to create a quick backend Express/Node REST API.
 
-The API is built with Express and MongoDB and the single-page application is built with HTML5, CSS3, and Jquery.
+The API is built with Express, MongoDB, and Mongoose.
 
 View the raw API data in JSON format by entering the url: https://afternoon-dawn-27478.herokuapp.com/api/todos
 
