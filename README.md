@@ -113,7 +113,7 @@ The response should look something like this:
   }
 ```
 
-...
+___
 
 View the raw API data in JSON format by entering the url: https://afternoon-dawn-27478.herokuapp.com/api/todos
 
