@@ -10,13 +10,13 @@ const express = require('express');
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(express.static(`${__dirname}/public`));
-app.use(express.static(`${__dirname}/views`));
+// app.use(express.static(`${__dirname}/public`));
+// app.use(express.static(`${__dirname}/views`));
 app.use('/api/todos', todoRoutes);
 
-app.get('/', (req, res) => {
-  res.sendFile('index.html');
-});
+// app.get('/', (req, res) => {
+//   res.sendFile('index.html');
+// });
 
 // SERVER
 app.get('*', (req, res) => {
