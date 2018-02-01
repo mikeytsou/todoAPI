@@ -1,6 +1,6 @@
 # Todo REST API
 
-A customizable REST API built for anyone who wants to create a quick backend Express/Node REST API.
+A customizable REST API built for anyone who needs to work with HTTP verbs GET, POST, PUT, DELETE.
 
 The API is built with Express, MongoDB, and Mongoose.
 
